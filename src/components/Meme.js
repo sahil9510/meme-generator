@@ -4,8 +4,7 @@ import styles from './Meme.module.css';
 import Card from './UI/Card'
 import CaptionEntry from './CaptionEntry';
 const Meme=()=>{
-    const username=process.env.REACT_APP_USERNAME;
-    const password=process.env.REACT_APP_PASSWORD;
+
 
     const [meme,setMeme]=useState(null);
     const [isLoading,setIsLoading] = useState(false);
@@ -30,8 +29,8 @@ const Meme=()=>{
             const url=new URL("https://api.imgflip.com/caption_image");
             const params={
                 "template_id": meme.id,
-                "username": username,
-                "password": password,
+                "username": "SahilSrivastava",
+                "password": "krlohack",
                 "boxes[0][text]": textObj.text0,
                 "boxes[1][text]": textObj.text1,
                 "max_font_size": textObj.font
