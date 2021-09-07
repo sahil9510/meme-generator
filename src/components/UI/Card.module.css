@@ -1,0 +1,18 @@
+.card{
+    border-radius: 5%;
+    background-color: #112031;
+    margin: 12% auto;
+    padding: 10px 50px ;
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .card {
+
+        width: 95%;
+        padding: 10px 15px;
+    }
+
+  }
